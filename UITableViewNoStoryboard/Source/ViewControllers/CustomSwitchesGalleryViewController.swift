@@ -88,13 +88,13 @@ extension CustomSwitchesGalleryViewController: UITableViewDataSource {
             cell.subtitle = "feature2.description."
             
             let animatedStyleA = YapAnimatedSwitch()
+            animatedStyleA.isOn = preferenceManager.feature2
             animatedStyleA.borderWidth = 0.7
             animatedStyleA.offBorderColor = #colorLiteral(red: 0.5531766415, green: 0.5738264918, blue: 0.5252009034, alpha: 1)
             animatedStyleA.offTintColor = #colorLiteral(red: 0.2621000409, green: 0.2876122594, blue: 0.243190378, alpha: 1)
             animatedStyleA.onThumbTintColor = #colorLiteral(red: 0.04343441129, green: 0.2247487009, blue: 0, alpha: 1)
             animatedStyleA.onTintColor = #colorLiteral(red: 0.611586988, green: 0.8452003002, blue: 0.4905993342, alpha: 1)
             animatedStyleA.offThumbTintColor = #colorLiteral(red: 0.5531766415, green: 0.5738264918, blue: 0.5252009034, alpha: 1)
-            animatedStyleA.isOn = preferenceManager.feature2
             animatedStyleA.addTarget(self, action: #selector(feature2ValueChanged), for: UIControl.Event.valueChanged)
             
             
